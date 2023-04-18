@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptaball - ONE</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./imagenes/logo.svg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="contenedor">
+            <img class="logo" src="/img/logo.svg" alt="logo alura">
+        </div>
+
+    </header>
+
+    <main>
+        <div class="contenedor">
+            <div class="encriptador">
+                <form class="encriptador_form">
+                    <div class="texto_en_area">
+                        <!-- Area para insertar texto para encriptar -->
+                        <textarea name="texto" id="texto" placeholder="Ingrese el texto aqui"></textarea>
+                        <div class="texto_info">
+                            <div class="info">
+                                <img src="/img/exclamation-circle.svg">
+                                <p id="advertencia">Solo letras minúsculas y si acentos</p>
+                            </div>
+
+                        </div>
+
+                        <div class="btn">
+                            <button id="encriptar" class="btn_encriptar" type="button">Encriptar</button>
+                            <button id="desencriptar" class="btn_desencriptar" type="button">Desencriptar</button>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="resultado">
+
+                    <div class="contenedor_resultado">
+                        <div class="contenido_no_resuelto" id="noResuelto">
+                            <div class="imagen_resultado">
+                                <img src="/img/Muñeco.png" alt="imagen encriptador">
+                            </div>
+                            <p>Ningún mensaje fue encontrado</p>
+                            <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                        </div>
+
+                        <!-- Resultado al encriptar -->
+                        <div class="contenido_resuelto" id="resuelto">
+                            <textarea class="texto-resultado" name="texto_resultado" id="textoResultado" disabled></textarea>
+                            <button class="btn-copiar" id="copiar" type="button">Copiar</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
